@@ -1,0 +1,58 @@
+########################################
+# Syntax Coloring Map For AK8963
+########################################
+
+########################################
+# Datatypes (KEYWORD1)
+########################################
+
+# Enumerators
+Mode							KEYWORD1
+Resolution						KEYWORD1
+
+# Classes
+AK8963							KEYWORD1
+
+
+########################################
+# Methods and Functions (KEYWORD2)
+########################################
+
+# class AK8963
+attachInterface					KEYWORD2
+attachDelay						KEYWORD2
+initialize						KEYWORD2
+getDeviceId						KEYWORD2
+checkConnection					KEYWORD2
+information						KEYWORD2
+getDataReady					KEYWORD2
+getDataOverrun					KEYWORD2
+getOverflow						KEYWORD2
+mode							KEYWORD2
+getMode							KEYWORD2
+powerDown						KEYWORD2
+startMeasurement				KEYWORD2
+resolution						KEYWORD2
+getResolution					KEYWORD2
+softReset						KEYWORD2
+selfTest						KEYWORD2
+disableI2c						KEYWORD2
+read							KEYWORD2
+mag_to_ut						KEYWORD2
+
+
+########################################
+# Constants (LITERAL1)
+########################################
+
+# enum Mode
+SINGLE_MEASUREMENT				LITERAL1
+CONTINUOUS_MEASUREMENT_8HZ		LITERAL1
+CONTINUOUS_MEASUREMENT_SLOW		LITERAL1
+CONTINUOUS_MEASUREMENT_100HZ	LITERAL1
+CONTINUOUS_MEASUREMENT_FAST		LITERAL1
+EXTERNAL_TRIGGER_MEASUREMENT	LITERAL1
+
+# enum Resolution
+BITS_14							LITERAL1
+BITS_16							LITERAL1
