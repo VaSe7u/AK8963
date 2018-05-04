@@ -1,5 +1,6 @@
-**UNDER DEVELOPMENT**
 *AK8963 3-axis electronic compass I2C and SPI library.*
+
+**NOT TESTED. Old tested version: [AK8963_I2C][oldLib]**
 
 [![release](https://img.shields.io/badge/release-0.1.0-yellow.svg)](https://github.com/VaSe7u/AK8963/releases)
 [![documentation](https://img.shields.io/badge/docs-doxygen-green.svg)](https://VaSe7u.github.io/AK8963/doc/Doxygen/html/index.html)
@@ -61,3 +62,4 @@ SOFTWARE.
 [doxygen classes]: https://VaSe7u.github.io/AK8963/doc/Doxygen/html/annotated.html
 [examples]: https://github.com/VaSe7u/AK8963/tree/master/examples
 [latest release]: https://github.com/VaSe7u/AK8963/releases/latest
+[oldLib]: https://github.com/VaSe7u/AK8963_I2C
