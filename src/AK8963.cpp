@@ -204,30 +204,30 @@ void AK8963::_initializeSensitivityAdjustment() {
 
 
 bool AK8963::_readBit(const Register registerAddress, bool *const bit,
-                       const Bit position) const {
+                      const Bit position) const {
   uint8_t reg = 0;
   if (_readBytes(registerAddress, &reg)) {
-    *bit = reg & (1 << (uint8_t)bit);
+    *bit = reg & (1 << (uint8_t)position);
     return true;
   } else {
     return false;
   }
 }
 bool AK8963::_writeBit(const Register registerAddress, const bool bit,
-                        const Bit position) {
+                       const Bit position) {
   uint8_t reg = 0;
   if (_readBytes(registerAddress, &reg)) {
     if (bit == true) {
       reg |= (1 << (uint8_t)position);
     } else {
-      reg &= (1 << (uint8_t)position);
+      reg &= ~(1 << (uint8_t)position);
     }
     return _writeBytes(registerAddress, &reg);
   }
 }
 
 bool AK8963::_readBits(const Register registerAddress, uint8_t *const bits,
-                        const Bit firstBit, const Length length) const {
+                       const Bit firstBit, const Length length) const {
   uint8_t reg;
   if (_readBytes(registerAddress, &reg)) {
     uint8_t shift = (bitStart - length) + 1; // shift to correct position
@@ -242,7 +242,7 @@ bool AK8963::_readBits(const Register registerAddress, uint8_t *const bits,
   }
 }
 bool AK8963::_writeBits(const Register registerAddress, const uint8_t bits,
-                         const Bit firstBit, const Length length) {
+                        const Bit firstBit, const Length length) {
   uint8_t reg; // register
   if (_readBytes(registerAddress, &reg)) {
     uint8_t shift = (bitStart - length) + 1;
@@ -258,10 +258,12 @@ bool AK8963::_writeBits(const Register registerAddress, const uint8_t bits,
 }
 
 bool AK8963::_readBytes(const Register registerAddress, uint8_t *const bytes,
-                         const int8_t size) const {
-  return _read(_device, (uint8_t)registerAddress, byte, size);
+                        const int8_t size) const {
+  if (_read == nullptr) return false;
+  return _read(_device, (uint8_t)registerAddress, byte, size); // fPtr(args), (*fPtr)(args)
 }
 bool AK8963::_writeBytes(const Register registerAddress, const uint8_t *const byte,
-                          const int8_t size) {
+                         const int8_t size) {
+  if (_write == nullptr) return false;
   return _write(_device, (uint8_t)registerAddress, byte, size);
 }
