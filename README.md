@@ -8,7 +8,7 @@
 
 
 **AK8963** is a 3-axis electronic compass.
-This library configures and reads the **AK8963** through callback functions. This makes it's platform independent.
+This library interfaces with **AK8963** through callback functions, making the library platform independent.
 
 
 Resources
