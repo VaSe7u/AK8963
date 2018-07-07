@@ -59,7 +59,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[doxygen classes]: https://VaSe7u.github.io/AK8963/docs/Doxygen/html/annotated.html
+[doxygen classes]: https://vase7u.github.io/AK8963/Doxygen/html/annotated.html
 [examples]: https://github.com/VaSe7u/AK8963/tree/master/examples
 [latest release]: https://github.com/VaSe7u/AK8963/releases/latest
 [oldLib]: https://github.com/VaSe7u/AK8963_I2C
