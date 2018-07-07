@@ -3,7 +3,7 @@
 **NOT TESTED. Old tested version: [AK8963_I2C][oldLib]**
 
 [![release](https://img.shields.io/badge/release-0.1.0-yellow.svg)](https://github.com/VaSe7u/AK8963/releases)
-[![documentation](https://img.shields.io/badge/docs-doxygen-green.svg)](https://VaSe7u.github.io/AK8963/doc/Doxygen/html/index.html)
+[![documentation](https://img.shields.io/badge/docs-doxygen-green.svg)](https://VaSe7u.github.io/AK8963/Doxygen/html/index.html)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://opensource.org/licenses/mit-license.php)
 
 
